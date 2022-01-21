@@ -1,0 +1,147 @@
+// Styles for the website
+
+// Global and Common Styles
+@import 'variables';
+@import "mixin";
+@import 'global';
+
+// Plugins
+@import '~primereact/resources/themes/nova-light/theme.css';
+@import '~primereact/resources/primereact.min.css';
+@import '~primeicons/primeicons.css';
+@import '~react-select/dist/react-select.css';
+@import '~react-quill/dist/quill.snow.css';
+@import '~react-widgets/dist/css/react-widgets.css';
+@import '~sweetalert/dist/sweetalert.css';
+@import '~react-s-alert/dist/s-alert-default.css';
+@import '~react-s-alert/dist/s-alert-css-effects/slide.css';
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+@import '~rc-slider/assets/index.css';
+@import '~react-tagsinput/react-tagsinput.css';
+
+// Components
+@import "components/user-thumbnail";
+@import "components/image-crop-upload";
+@import "components/conformation_model";
+@import 'components/switch';
+
+// Layouts
+@import "layouts/contestEntryDetail";
+@import "layouts/pages";
+@import "layouts/editpage";
+
+// Core variables and mixins
+@import "bootstrap-variables";
+@import "bootstrap_src/variables";
+@import "custom-variables";
+@import "bootstrap_src/mixins";
+@import "core/mixins";
+
+@import "custom";
+// Reset and dependencies
+@import "bootstrap_src/normalize";
+@import "bootstrap_src/print";
+
+// Core CSS
+@import "bootstrap_src/reboot";
+@import "bootstrap_src/type";
+@import "bootstrap_src/images";
+@import "bootstrap_src/code";
+@import "bootstrap_src/grid";
+
+@import "bootstrap_src/tables";
+@import "bootstrap_custom/tables";
+
+@import "bootstrap_src/forms";
+
+@import "bootstrap_src/buttons";
+@import "bootstrap_custom/buttons";
+
+// Components
+@import "bootstrap_src/transitions";
+
+@import "bootstrap_src/dropdown";
+@import "bootstrap_custom/dropdown";
+
+@import "bootstrap_src/button-group";
+
+@import "bootstrap_src/input-group";
+@import "bootstrap_custom/input-group";
+
+//@import "custom-forms";
+
+@import "bootstrap_src/nav";
+@import "bootstrap_custom/nav";
+
+@import "bootstrap_src/navbar";
+@import "bootstrap_custom/navbar";
+
+@import "bootstrap_src/card";
+@import "bootstrap_custom/card";
+
+@import "bootstrap_src/breadcrumb";
+@import "bootstrap_custom/breadcrumb";
+
+@import "bootstrap_src/pagination";
+
+@import "bootstrap_src/badge";
+@import "bootstrap_custom/badge";
+
+//@import "jumbotron";
+@import "bootstrap_src/alert";
+
+@import "bootstrap_src/progress";
+@import "bootstrap_custom/progress";
+
+@import "bootstrap_src/media";
+@import "bootstrap_src/list-group";
+@import "bootstrap_src/responsive-embed";
+@import "bootstrap_src/close";
+
+// Components w/ JavaScript
+@import "bootstrap_src/modal";
+@import "bootstrap_custom/modal";
+
+@import "bootstrap_src/tooltip";
+@import "bootstrap_src/popover";
+@import "bootstrap_src/carousel";
+
+// Utility classes
+@import "bootstrap_src/utilities";
+
+// Vendors Styles
+// @import "vendors/vendors";
+
+// CoreUI Styles
+// Additional typography
+@import "core/typography";
+
+// Animations
+@import "core/animate";
+
+// Core files
+@import "core/grid";
+@import "core/layout";
+@import "core/navigation";
+@import "core/aside";
+@import "core/loading";
+@import "core/widgets";
+@import "core/footer";
+@import "core/buttons";
+@import "core/others";
+@import "core/breadcrumb-menu";
+@import "core/avatars";
+@import "core/callout";
+@import "core/switches";
+@import "core/charts";
+@import "core/utilities-border";
+
+// Temporary fixes
+@import "core/temp";
+
+// Mobile View
+@import "core/mobile";
+
+// UI Kits
+@import "uikits/uikits";

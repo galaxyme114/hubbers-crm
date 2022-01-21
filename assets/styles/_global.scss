@@ -1,0 +1,88 @@
+// Global app styles
+
+$mq-sm: 768px;
+$mq-md: 992px;
+$mq-lg: 1200px;
+
+$breakpoints: $mq-sm, $mq-md, $mq-lg;
+
+$neat-grid: (
+	columns: 12,
+	gutter: 30px
+);
+
+html {
+	font-size: 13px;
+
+	@include respond-to($tablet) {
+		font-size: 14px;
+	}
+
+	@include respond-to($desktop) {
+		font-size: 16px;
+	}
+}
+
+body {
+	font-family: 'SFUIDisplay-Regular';
+	color: $text-black;
+	background-color: $background-grey;
+	margin: 0;
+}
+
+//@font-face {
+//	font-family: 'SFUIDisplay-Regular';
+//	src: url('./../fonts/SFUIDisplay-Regular.ttf');
+//}
+
+.dropzone-placeholder {
+	padding: 1rem 0;
+	text-align: center;
+	color: $text-grey;
+
+	.icon {
+		font-size: 2rem;
+		color: $green;
+	}
+}
+
+.thumbnail_img{
+	width: 50px;
+	height: 50px;
+	border: 1px solid #999;
+	text-align: center;
+	overflow: hidden;
+	border-radius: 100px;
+	margin: auto;
+	img{
+		width: 50px;
+		height: 50px;
+		border-radius: 100px;
+	}
+}
+.slick-arrow {
+	width: 32px;
+	height: 32px;
+
+	&:before {
+		font-size: 32px;
+		color: $green;
+	}
+
+	&.slick-prev {
+		@include respond-to($desktop) {
+			left: -32px;
+		}
+
+	}
+
+	&.slick-next {
+		@include respond-to($desktop) {
+			right: -32px;
+		}
+	}
+}
+
+.sweet-overlay {
+	opacity: 1 !important;
+}

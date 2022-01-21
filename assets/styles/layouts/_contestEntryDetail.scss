@@ -1,0 +1,519 @@
+// Contest Entrie Detail
+.center-add-button {
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.add-judge-modal {
+	min-width: 700px;
+}
+.add-contestant-modal {
+	min-width: 700px;
+}
+.contest_entry_detail{
+	.entry_detail_tabs{
+		border-bottom: none;
+		margin-bottom: 20px;
+		.entry_detail_tabs_contestant{
+			width: 50%;
+			a{
+				width: 80%;
+				text-align: center;
+				font-size: 18px;
+				border-color: #e1e6ef #e1e6ef #ddd;
+				border-radius: 100px;
+				cursor: pointer;
+				margin: auto;
+			}
+			a:hover{
+				border-color: #ff6347;
+				border-radius: 100px;
+			}
+			.active{
+				color: #fff;
+				background: #ff6347;
+				border-color: #ff6347;
+				border-bottom-color: transparent;
+				text-align: center;
+				border-radius: 50px;
+			}
+		}
+		.entry_detail_tabs_judge{
+			width: 50%;
+			a{
+				width: 80%;
+				text-align: center;
+				font-size: 18px;
+				border-color: #e1e6ef #e1e6ef #ddd;
+				border-radius: 100px;
+				cursor: pointer;
+				margin: auto;
+			}
+			a:hover{
+				border-color: #ff6347;
+				border-radius: 100px;
+			}
+			.active{
+				color: #fff;
+				background: #ff6347;
+				border-color: #ff6347;
+				border-bottom-color: transparent;
+				text-align: center;
+				border-radius: 50px;
+			}
+		}
+	}
+	.contestants_header_row{
+		border: 1px solid #ddd;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		.contestants_header_title{
+			font-weight: bold;
+		}
+	}
+	.contestants_content_row{
+		border: 1px solid #ddd;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		.togglebtn_right{
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			margin-top: 5px;
+		}
+		.togglebtn_right:focus, .editbtn:focus, .deletebtn:focus{
+			outline: none;
+			box-shadow: none;
+		}
+		.content_thumb{
+			.content_thumb_img{
+				width: 45px;
+				height: 45px;
+				float: left;
+				margin-right: 1rem;
+				text-align: center;
+				border: 1px solid #999;
+				border-radius: 100px;
+				overflow: hidden;
+				img{
+					width: 45px;
+					height: 45px;
+				}
+			}
+		}
+		.content_data{
+			padding-top: 10px;
+		}
+		.actionbtns{
+			text-align: right;
+			padding-top: 5px;
+		}
+		.editbtn{
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			padding: 0px;
+			margin-top: 5px;
+			i{
+				font-size: 22px;
+				color: $green;
+			}
+		}
+		.deletebtn{
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			padding: 0px;
+			i{
+				font-size: 22px;
+				color: red;
+			}
+		}
+	}
+	.contestants_inner_header_row{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-top: 10px;
+		border: 1px solid #ddd;
+		.inner_header_title{
+			font-weight: bold;
+			font-size: 12px;
+		}
+		.inner_header_no{
+			width: 10%;
+			text-align: center;
+		}
+		.inner_header_name{
+			width: 30%;
+			> div{
+				text-align: center;
+			}
+		}
+		.inner_header_marks{
+			width: 20%;
+			> div{
+				text-align: center;
+			}
+		}
+		.inner_header_action{
+			width: 20%;
+			> div{
+				text-align: center;
+			}
+		}
+	}
+	.contestants_inner_content_row{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border: 1px solid #ddd;
+		.contestants_inner_content_no{
+			width: 10%;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: center;
+			> div{
+				text-align: center;
+				padding-top: 12px;
+			}
+		}
+		.contestants_inner_content_name{
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 30%;
+			> div{
+				text-align: center;
+				padding-top: 12px;
+			}
+		}
+		.contestants_inner_content_marks{
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 20%;
+			> div{
+				text-align: center;
+				padding-top: 12px;
+			}
+		}
+		.contestants_inner_content_action{
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 20%;
+			> div{
+				text-align: center;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				.editbtn{
+					background: transparent;
+					border: none;
+					cursor: pointer;
+					padding: 0px;
+					margin-top: 5px;
+					i{
+						font-size: 22px;
+						color: $green;
+					}
+				}
+				.deletebtn{
+					background: transparent;
+					border: none;
+					cursor: pointer;
+					padding: 0px;
+					i{
+						font-size: 22px;
+						color: red;
+					}
+				}
+				.editbtn:focus, .deletebtn:focus{
+					outline: none;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+
+	.header_row{
+		border: 1px solid #ddd;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		.header_title{
+			//text-align: center;
+			font-weight: bold;
+		}
+	}
+	.content_row{
+		border: 1px solid #ddd;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		.togglebtn_right{
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			margin-top: 5px;
+		}
+		.togglebtn_right:focus, .editbtn:focus, .deletebtn:focus{
+			outline: none;
+			box-shadow: none;
+		}
+		.content_thumb{
+			//text-align: center;
+			overflow: hidden;
+			margin: auto;
+			.content_thumb_img{
+				width: 45px;
+				height: 45px;
+				float: left;
+				margin-right: 1rem;
+				text-align: center;
+				border: 1px solid #999;
+				border-radius: 100px;
+				overflow: hidden;
+				img{
+					width: 45px;
+					height: 45px;
+				}
+			}
+		}
+		.content_data{
+			padding-top: 10px;
+			//text-align: center;
+		}
+		.actionbtns{
+			text-align: right;
+			padding-top: 5px;
+		}
+		.editbtn{
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			padding: 0px;
+			margin-top: 5px;
+			i{
+				font-size: 22px;
+				color: $green;
+			}
+		}
+		.deletebtn{
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			padding: 0px;
+			i{
+				font-size: 22px;
+				color: red;
+			}
+		}
+	}
+	.inner_header_row{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-top: 10px;
+		border: 1px solid #ddd;
+		.header_title{
+			font-weight: bold;
+			font-size: 12px;
+		}
+		.inner_header_thumb{
+			width: 10%;
+		}
+		.inner_header_name{
+			width: 20%;
+			> div{
+				text-align: center;
+			}
+		}
+		.inner_header_designs{
+			width: 15%;
+			> div{
+				text-align: center;
+			}
+		}
+		.inner_header_action{
+			width: 10%;
+			> div{
+				text-align: center;
+			}
+		}
+	}
+	.inner_content_row{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 20px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border: 1px solid #ddd;
+		.inner_content_thumb{
+			width: 10%;
+			padding-left: 10px;
+			padding-right: 10px;
+			text-align: center;
+			overflow: hidden;
+			.inner_content_thumb_img{
+				width: 45px;
+				height: 45px;
+				margin: auto;
+				text-align: center;
+				border: 1px solid #999;
+				border-radius: 100px;
+				overflow: hidden;
+				img{
+					width: 45px;
+					height: 45px;
+				}
+			}
+			
+		}
+		.inner_content_name{
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 20%;
+			> div{
+				text-align: center;
+				padding-top: 10px;
+			}
+		}
+		.inner_content_designs{
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 15%;
+			> div{
+				text-align: center;
+				padding-top: 10px;
+			}
+		}
+		.inner_content_action{
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 10%;
+			> div{
+				text-align: center;
+				padding-top: 10px;
+				.editbtn{
+					background: transparent;
+					border: none;
+					cursor: pointer;
+					padding: 0px;
+					margin-top: 5px;
+					i{
+						font-size: 22px;
+						color: $green;
+					}
+				}
+				.deletebtn{
+					background: transparent;
+					border: none;
+					cursor: pointer;
+					padding: 0px;
+					i{
+						font-size: 22px;
+						color: red;
+					}
+				}
+				.editbtn:focus, .deletebtn:focus{
+					outline: none;
+					box-shadow: none;
+				}
+			}
+		}
+	}
+	.table_thumbnail{
+		width: 60px;
+		height: 60px;
+		border: 1px solid #999;
+		border-radius: 100%;
+	}
+	.ui-datatable-reflow{
+		th {
+			span{
+				display: block !important;
+			}
+		}
+	}
+
+}
+.ratingbtns{
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+}
+.entrys-rating_heading_title{
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.entrys-rating{
+	.entrys-rating__inner{
+		margin-bottom: 0.5rem;
+		.entrys-rating_title{
+			font-size: 15px;
+			font-weight: bold;
+		}
+		.entrys-rating_value{
+			font-size: 15px;
+			font-style: italic;
+		}
+	}
+}
+.rating_notfound{
+	color: #f34235;
+	margin-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.fileuploadbox{
+	// width: 33.3333%;
+	// float: left;
+	padding: 1rem;
+	.imagebox{
+		width: 100%;
+		height: 200px;
+		border: 1px solid #ddd;
+	}
+	.imagebox2{
+		width: 100%;
+		height: 200px;
+		border: 1px solid #ddd;
+		img{
+			width: 40px;
+			text-align: center;
+			margin: auto;
+			padding-top: 50%;
+		}
+		p{
+			margin: 0px;
+		}
+	}
+	.imagebox__title{
+		padding-top: 10px;
+	}
+}
+.form-group label{
+	font-weight: bold;
+}
+.draftbtn, .draftbtn:hover {
+	color: #ff5454 !important;
+    background-image: none !important;
+    background-color: transparent !important;
+    border-color: #ff5454 !important;
+}
+
+//prize manage contest
+
+.price-manage-block{
+	padding:1rem;
+}

@@ -1,0 +1,41 @@
+.image-crop-upload {
+
+}
+
+.image-crop-upload__inner {
+	.image-crop-upload__thumbnail {
+		position: relative;
+		padding-top: 56.25%;
+		background: $background-grey center;
+		background-size: cover;
+
+		> div {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100% !important;
+			height: 100% !important;
+
+			border-color: rgb(211, 211, 211) !important;
+		}
+	}
+
+	.image-crop-upload__actions {
+		margin-top: 1rem;
+
+		button {
+			float: left;
+		}
+
+		progress {
+			float: right;
+			margin: 0.45rem 0;
+		}
+	}
+}
+
+.image-crop-upload__modal {
+	display: none;
+}

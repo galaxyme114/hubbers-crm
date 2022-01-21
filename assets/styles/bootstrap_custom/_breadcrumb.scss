@@ -1,0 +1,13 @@
+.breadcrumb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5 * $spacer-y;
+  top: 0px;
+  height: 50px;
+  border-bottom: 1px solid $border-grey;
+
+  .breadcrumb-item {
+    font-size: 1.125rem;
+  }
+}

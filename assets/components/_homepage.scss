@@ -1,0 +1,96 @@
+// HomePage Styles
+
+
+.container{
+    @include outer-container;
+    margin-top: 3.125rem;
+    .productlistrow{
+        // margin-top: 1.25rem;
+        // margin-bottom: 1.25rem;
+        @include row();
+        .col-6{
+            @include span-columns(6);
+            @include respond-to($mobile){
+                @include span-columns(12);
+                padding-left: 1rem;
+                padding-right: 1rem;
+                .product-box{
+                    margin-bottom: 1.25rem !important;
+                }
+            }
+            .product-box{
+                position: relative;
+                overflow: hidden;
+                height: 23.75rem;
+                display: block;
+                border-radius:  0.313rem;
+                background: $white;
+                // margin-top:0.938rem;
+                // margin-bottom:0.938rem;
+                margin-bottom: 3.125rem;
+                margin-left: 0.625rem;
+                margin-right: 0.625rem;
+                img{
+                    width: 100%;
+                }
+                .product-hover{
+                    opacity: 0;
+                    background-color: #000000;
+                    -webkit-transition: all 0.4s ease-in-out;
+                    -moz-transition: all 0.4s ease-in-out;
+                    -o-transition: all 0.4s ease-in-out;
+                    -ms-transition: all 0.4s ease-in-out;
+                    transition: all 0.4s ease-in-out;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    cursor: pointer;
+                    padding-top: 0.625rem;
+                    padding-right: 1.25rem;
+                    padding-bottom: 0.625rem;
+                    padding-left: 1.25rem;
+                    .product-title{
+                        font-size: 1.125rem;
+                        color: #fffefe;
+                        margin-bottom: 0rem;
+                        text-decoration: none;
+                      }
+                      .product-subtitle{
+                        font-size: 0.75rem;
+                        color: #c9c9c9;
+                      }
+                      .product-subtitle-name{
+                        font-size: 0.75rem;
+                        color: #fffefe;
+                      }
+                      .product-price{
+                        font-size: 1.125rem;
+                        color: #fffefe;
+                      }
+                      .product-fromtxt{
+                        font-size: 0.75rem;
+                        color: #fffefe;
+                      }
+                      .ordernowbtn-box{
+                        float: right;
+                        margin-top: -2.5rem;
+                      }
+                      .ordernowbtn{
+                        font-size: 1.125rem;
+                        background: #00c24d;
+                        border-radius: 6.25rem;
+                        color: $white;
+                        padding: 0.5rem 0.938rem 0.5rem 0.938rem;
+                        border: 0rem;
+                        cursor: pointer;
+                      }
+                }
+            }
+            .product-box:hover .product-hover {
+                opacity: 0.9 !important;
+            }
+        }
+    }
+}

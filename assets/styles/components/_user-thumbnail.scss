@@ -1,0 +1,64 @@
+// User Thumbnail
+
+.user-thumbnail {
+	position: relative;
+
+	width: 3.125rem;
+	height: 3.125rem;
+	min-width: 3.125rem;
+	min-height: 3.125rem;
+	border-radius: 50%;
+	background-color: $text-black;
+	text-align: center;
+
+	overflow: hidden;
+
+	.user-thumbnail__image {
+		width: 100% !important;
+		height: 100% !important;
+		background-size: cover;
+		background-position: center;
+
+		> div {
+			position: absolute;
+			top: 0;
+			width: 100% !important;
+			height: 100% !important;
+			border-radius: 50% !important;
+			border-color: #6f6f6f !important;
+		}
+	}
+
+	img {
+		max-width: 100%;
+		border-radius: 50%;
+	}
+
+	.initials {
+		font-size: 1.25em;
+		color: #ffffff;
+		display: block;
+		padding: 0.85rem 0.3125rem;
+	}
+
+	.icon-camera, .icon-upload-cloud {
+		font-size: 1.75rem;
+		color: $green;
+		position: absolute;
+		bottom: 1rem;
+		left: 50%;
+		margin-left: -0.875rem;
+	}
+
+	.icon-camera {
+		pointer-events: none;
+	}
+}
+
+.user-thumbnail__upload-spinner {
+	.sk-spinner {
+		color: $green;
+		text-align: center;
+		margin-top: 1rem;
+	}
+}
